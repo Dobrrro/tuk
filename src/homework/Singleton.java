@@ -6,19 +6,19 @@ package homework;
 
 //          МЕТОД 1, РАСКОМПЕЛИРОВАТЬ:
 
-public class Singleton {
+//public class Singleton {
+//
+//    private static Singleton instance = new Singleton();
+//
+//    private Singleton() {
+//    }
+//
+//    public static Singleton getInstance() {
+//        return instance;
+//    }
+//}
 
-    private static Singleton instance = new Singleton();
-
-    private Singleton() {
-    }
-
-    public static Singleton getInstance() {
-        return instance;
-    }
-}
-
-//          МЕТОД 2, РАСКОМПЕЛИРОВАТЬ:
+//          МЕТОД 2 с ленивой загрузкой, РАСКОМПЕЛИРОВАТЬ:
 
 //public class Singleton {
 //    private static Singleton instance;
@@ -34,22 +34,9 @@ public class Singleton {
 //    }
 //}
 
-//          МЕТОД 3 с ленивой загрузкой, РАСКОМПЕЛИРОВАТЬ:
 
-//public class Singleton {
-//    public static IntToIntPixelConverter getInstance() {
-//        if (instance == null) {
-//            synchronized (Singleton.class) {
-//                if (instance == null) {
-//                    instance = (IntToIntPixelConverter) new Singleton();
-//                }
-//            }                 //Вот тут не понимаю почему подчеркивает instance, но кучу сайтов перерыл
-//        }                     //должно быть правильно.
-//        return instance;
-//    }
-//}
 
-//          МЕТОД 4 через enum, РАСКОМПЕЛИРОВАТЬ:
+//          МЕТОД 3 через enum, РАСКОМПЕЛИРОВАТЬ:
 
 //public enum Singleton {
 //    INSTANCE;
