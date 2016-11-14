@@ -13,10 +13,11 @@ public class Zadacha6_Delenie
 
         public static void main(String[] args)
         {
-            System.out.println(del(72, 12));
+            System.out.println(del(72, -16));
         }
 
     private static double del(double a, double b) {
+
         return a * pow(b, -1);
     }
 }
