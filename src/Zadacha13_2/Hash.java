@@ -22,7 +22,7 @@ public class Hash {
         long result;
         return result = finish - start;
     }
-    private static long removeHashSet(int n, Set<Integer> collections){
+    public static long removeHashSet(int n, Set<Integer> collections){
         long start = System.currentTimeMillis();
         for (int i = 0; i < n; i++){
             collections.remove(i);

@@ -9,7 +9,6 @@ import static Zadacha13_2.Array.remove;
 import static Zadacha13_2.Hash.addValueHashSet;
 import static Zadacha13_2.Linked.addValue;
 import static Zadacha13_2.time.compare;
-import static java.util.Collections.get;
 
 /**
  * Created by Пыльный on 17.11.2016.
@@ -48,9 +47,9 @@ public class main {
         System.out.println();
 
         System.out.println("Check GET array");
-        long getArrayList = get(n, arrayList);
-        long getLinkedList = get(n, linkedList);
-        long getHashSet = getHashSet(n, hashSet);
+        long getArrayList = Array.get(n, arrayList);
+        long getLinkedList = Linked.get(n, linkedList);
+        long getHashSet = Hash.getHashSet(n, hashSet);
         print(getArrayList, getLinkedList, getHashSet);
         compare(getArrayList, getLinkedList, getHashSet, "GET array");
         System.out.println();
@@ -58,7 +57,7 @@ public class main {
         System.out.println("Check REMOVE array");
         long removeArrayList = remove(n, arrayList);
         long removeLinkedList = remove(n, linkedList);
-        long removeHashSet = removeHashSet(n, hashSet);
+        long removeHashSet = Hash.removeHashSet(n, hashSet);
         print(removeArrayList, removeLinkedList, removeHashSet);
         compare(removeArrayList, removeLinkedList, removeHashSet, "REMOVE array");
         System.out.println();
